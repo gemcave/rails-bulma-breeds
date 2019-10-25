@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HorsesOnRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1><%= link_to 'Horses on Rails', root_path %></h1>
+    <h2>Look at all the pretty horses standing in a <strong>row, row, row</strong>.
+    <%= yield %>
+  </body>
+</html>
