@@ -3,5 +3,7 @@
 <h4>Horses of this breed</h4>
 
 <% @breed.horses.each do |horse| %>
-  <%= render @breed.horses %>
+  <%= render partial: 'horses/horse',
+						 collection: @breed.horses,
+						 locals: { name_is_link: true } %>
 <% end %>
