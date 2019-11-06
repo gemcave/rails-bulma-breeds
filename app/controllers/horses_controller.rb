@@ -7,6 +7,7 @@ class HorsesController < ApplicationController
 	end
 	
 	def search_results
-		
+		@query = params[:query]
+		@horses = Horse.where(name: @query)
 	end
 end
